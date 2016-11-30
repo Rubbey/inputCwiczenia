@@ -4,12 +4,13 @@ namespace inputCwiczenia
 {
     class Program
     {
+        //komentarz testowy
         static void Main(string[] args)
         {
             Console.Clear();
             Console.WriteLine("Aplikacja sprawdająca poprawność wpisanych danych.\n");
            
-            float testowanaLiczba;
+            float testNumber;
             bool test = false;
 
             // wersja pierwsza
@@ -20,7 +21,7 @@ namespace inputCwiczenia
 
                 try
                 {
-                  testowanaLiczba = float.Parse(Console.ReadLine());
+                  testNumber = float.Parse(Console.ReadLine());
                 }
                 catch (Exception)
                 {
@@ -28,7 +29,7 @@ namespace inputCwiczenia
                     continue;
                 }
                 test = true;
-                Console.WriteLine("\nTestowana liczba to {0} - to jest prawidłowa liczba!", testowanaLiczba);
+                Console.WriteLine("\nTestowana liczba to {0} - to jest prawidłowa liczba!", testNumber);
 
             } while (test == !true);
 
@@ -36,7 +37,7 @@ namespace inputCwiczenia
             // wersja druga
 
              
-            float testowanaLiczba2;
+            float testNumber2;
             
                 Console.Write("\n\nTo jest druga wersja mechanizmu sprawdzania. ");
 
@@ -44,16 +45,16 @@ namespace inputCwiczenia
             {
                 Console.Write("Podaj kolejną liczbę, tym razem musi być różna od 0: ");
                 string wejscie = Console.ReadLine();
-                float.TryParse(wejscie, out testowanaLiczba2);
+                float.TryParse(wejscie, out testNumber2);
 
-                if (testowanaLiczba2 != 0)
+                if (testNumber2 != 0)
                 {
                     Console.WriteLine("\nPodana liczba to {0} i jest ona prawidłowa.", testowanaLiczba2);
                     break;
                 }
-                if (testowanaLiczba2 == 0)
+                if (testNumber2 == 0)
                 {
-                    Console.WriteLine("\nPodana liczba to \"{0}\" i jest ona nieprawidowa!", wejscie);
+                    Console.WriteLine("\nPodana wartość to \"{0}\" i jest ona nieprawidowa!", wejscie);
                     continue;
                 }
                 
