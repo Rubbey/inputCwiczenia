@@ -49,7 +49,7 @@ namespace inputCwiczenia
 
                 if (testNumber2 != 0)
                 {
-                    Console.WriteLine("\nPodana liczba to {0} i jest ona prawidłowa.", testowanaLiczba2);
+                    Console.WriteLine("\nPodana liczba to {0} i jest ona prawidłowa.", testNumber2);
                     break;
                 }
                 if (testNumber2 == 0)
@@ -64,9 +64,7 @@ namespace inputCwiczenia
 
             
         }
-    }
-        static public void Sprawdzenie()
-    {
+    
 
     }
 }
