@@ -12,6 +12,7 @@ namespace inputCwiczenia
            
             float testNumber;
             bool test = false;
+            Console.ReadLine();
 
             // wersja pierwsza
             do
